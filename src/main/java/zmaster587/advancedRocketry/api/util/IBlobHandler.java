@@ -10,6 +10,7 @@ public interface IBlobHandler {
 	 * /
 	public void onBlobRemove(BlockPosition pos);
 	
+	
 	/**
 	 * Called when a block is being added to the blob
 	 * @param pos BlockPosition to add
@@ -21,7 +22,12 @@ public interface IBlobHandler {
 	 */
 	public boolean canFormBlob();
 	
-	public World getWorldObj();
+	
+	/**
+	 * Due to Minecraft's obf code we need a different method name than getWorldObj()
+	 * @return
+	 */
+	public World getWorld();
 	
 	/**
 	 * Called when two blobs of the same type overlap

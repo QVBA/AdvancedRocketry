@@ -41,11 +41,11 @@ public class TileObservatory extends TileMultiPowerConsumer implements IModularI
 			{Blocks.air, Blocks.iron_block, Blocks.iron_block, Blocks.iron_block, Blocks.air},
 			{Blocks.air, Blocks.air, Blocks.air, Blocks.air, Blocks.air}},
 
-			{	{Blocks.air, Blocks.air, Blocks.air, Blocks.air, Blocks.air}, 
+			{	{Blocks.air,Blocks.air,Blocks.air,Blocks.air,Blocks.air}, 
 				{Blocks.air, Blocks.iron_block, Blocks.iron_block, Blocks.iron_block, Blocks.air},
 				{Blocks.air, Blocks.iron_block, Blocks.coal_block, Blocks.iron_block, Blocks.air},
 				{Blocks.air, Blocks.iron_block, Blocks.iron_block, Blocks.iron_block, Blocks.air},
-				{Blocks.air, Blocks.air, Blocks.air, Blocks.air, Blocks.air}},
+				{Blocks.air,Blocks.air,Blocks.air,Blocks.air,Blocks.air}},
 
 				{	{Blocks.air, Blocks.iron_block, Blocks.iron_block, Blocks.iron_block, Blocks.air}, 
 					{Blocks.iron_block, Blocks.air, Blocks.air, Blocks.air, Blocks.iron_block},
@@ -53,13 +53,13 @@ public class TileObservatory extends TileMultiPowerConsumer implements IModularI
 					{Blocks.iron_block, Blocks.air, Blocks.coal_block, Blocks.air, Blocks.iron_block},
 					{Blocks.air, Blocks.iron_block, Blocks.iron_block, Blocks.iron_block, Blocks.air}},
 
-					{	{Blocks.air,'*', 'c', '*',Blocks.air}, 
+					{	{ Blocks.air,'*', 'c', '*',Blocks.air}, 
 						{'*',Blocks.iron_block, Blocks.iron_block, Blocks.iron_block,'*'},
 						{'*',Blocks.iron_block, Blocks.iron_block, Blocks.iron_block,'*'},
 						{'*',Blocks.iron_block, Blocks.iron_block, Blocks.iron_block,'*'},
-						{Blocks.air,'*', '*', '*',Blocks.air}},
+						{Blocks.air,'*', '*', '*', Blocks.air}},
 
-						{	{Blocks.air,'*', '*', '*',Blocks.air}, 
+						{	{Blocks.air,'*', '*', '*', Blocks.air}, 
 							{'*',Blocks.iron_block, Blocks.iron_block, Blocks.iron_block,'*'},
 							{'*',Blocks.iron_block, Blocks.iron_block, Blocks.iron_block,'*'},
 							{'*',Blocks.iron_block, Blocks.iron_block, Blocks.iron_block,'*'},

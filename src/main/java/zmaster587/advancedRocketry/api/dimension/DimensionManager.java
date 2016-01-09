@@ -285,8 +285,10 @@ public class DimensionManager {
 	 */
 	public void unregisterAllDimensions() {
 		for(Entry<Integer, DimensionProperties> dimSet : dimensionList.entrySet()) {
-			net.minecraftforge.common.DimensionManager.unregisterProviderType(dimSet.getKey());
-			net.minecraftforge.common.DimensionManager.unregisterDimension(dimSet.getKey());
+			if(!dimSet.getValue().isNativeDimension) {
+				net.minecraftforge.common.DimensionManager.unregisterProviderType(dimSet.getKey());
+				net.minecraftforge.common.DimensionManager.unregisterDimension(dimSet.getKey());
+			}
 		}
 		dimensionList.clear();
 	}
@@ -509,9 +511,10 @@ public class DimensionManager {
 
 				if(propeties != null) {
 					int keyInt = Integer.parseInt(keyString);
-					if(propeties.isNativeDimension) {
+					if(!net.minecraftforge.common.DimensionManager.isDimensionRegistered(keyInt) /*propeties.isNativeDimension*/) {
 						net.minecraftforge.common.DimensionManager.registerProviderType(keyInt, DimensionManager.planetWorldProvider, false);
 						net.minecraftforge.common.DimensionManager.registerDimension(keyInt, keyInt);
+						propeties.isNativeDimension = true;
 					}
 
 					dimensionList.put(new Integer(keyInt), propeties);
